@@ -48,12 +48,7 @@ body {
     color: white;
 }
 
-.search-btn button {
-    background-color: var(--secondary-color);
-    color: white;
-    font-size: 1rem;
-    border: 1px solid var(--primary-color);
-}
+
 
 .container {
     margin: auto;
@@ -121,13 +116,26 @@ body {
         padding-top: 10px;
     }
 
-    .search-btn {
-        width: 200px;
-        margin-right: 100px;
-    }
+
 }
 
-.notfound {
-    font-size: 40px;
-    font-weight: bold;
+
+
+
+.search-btn button {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1rem;
+    border: 1px solid var(--primary-color);
+    width: 200px;
+    margin-left: 50%;
+}
+
+.add-btn button {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1rem;
+    border: 1px solid var(--primary-color);
+    width: 200px;
+    margin-right: 40%;
 }
