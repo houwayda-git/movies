@@ -21,7 +21,10 @@ const Main = ({ addMovie, movies }) => {
             movie.title.toLowerCase().includes(search.toLowerCase())))
     }, [search, movies])
 
-
+    const handledelete = (name) => {
+        setData(movies.filter((movie) =>
+            movie.title.toLowerCase() != name.toLowerCase()))
+    }
     return (
         <>
             <div>
@@ -42,7 +45,7 @@ const Main = ({ addMovie, movies }) => {
             </div>
             <div className="container">
                 {
-                    data.map((movie, index) => <Card key={index} movie={movie} />)
+                    data.map((movie, index) => <Card key={index} movie={movie} handledelete={handledelete} />)
 
 
                 }

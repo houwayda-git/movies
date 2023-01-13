@@ -1,7 +1,11 @@
 import react from "react";
 
 
-const Card = ({ movie }) => {
+const Card = ({ movie, handledelete }) => {
+
+    const deleteMovie = () => {
+        handledelete(movie.title)
+    }
     return (
         <>
             <div className="movie">
@@ -10,6 +14,7 @@ const Card = ({ movie }) => {
                     <div className="box">
                         <h4 className="title">{movie.title}</h4>
                     </div>
+                    <button onClick={deleteMovie}>Delete</button>
                 </div>
             </div>
         </>

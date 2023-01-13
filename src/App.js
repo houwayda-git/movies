@@ -21,8 +21,6 @@ function App() {
 
   }
 
-
-  console.log(movies)
   return (
     <div className="App">
       <Main addMovie={addMovie} movies={movies} />
