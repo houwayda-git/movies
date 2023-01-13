@@ -8,8 +8,10 @@ const AddMovie = ({ addMovie }) => {
         setAdd(e.target.value)
     }
 
-    const handleSave = () => {
+    const handleSave = (e) => {
+        e.preventDefault()
         addMovie(add)
+        setAdd('')
     }
     return (
         <>
